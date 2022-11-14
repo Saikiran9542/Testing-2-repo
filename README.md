@@ -25,7 +25,3 @@ String.prototype.template = function (object) {
     );
     i = re.lastIndex;
   }
-  evaluate.push(stringify(this.slice(i)));
-  // Function is needed to opt out from possible "use strict" directive
-  return Function('with(this)return' + evaluate.join('+')).call(object);
-};
