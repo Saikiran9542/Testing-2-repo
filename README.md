@@ -25,3 +25,19 @@ String.prototype.template = function (object) {
     );
     i = re.lastIndex;
   }
+ * Usage: 
+ *   'Hello ${name}'.template({
+ *     name: 'chaps'
+ *   });
+ * 
+ * From: https://gist.github.com/WebReflection/8f227532143e63649804
+ */
+
+String.prototype.template = function (object) {
+  // Andrea Giammarchi - WTFPL License
+  var
+    stringify = JSON.stringify,
+    re = /\$\{([\S\s]*?)\}/g,
+    evaluate = [],
+    i = 0,
+    m
