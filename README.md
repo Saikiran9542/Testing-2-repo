@@ -7,7 +7,7 @@ testing view purpose
  *   });
  * 
  * From: https://gist.github.com/WebReflection/8f227532143e63649804
- */
+ */t) { // Andrea Giammarchi - WTFPL License var stringify = JSON.stringify, re = /${([\S\s]*?)}/g, evaluate = [], i = 0, m ; while (m = re.exec(this)) { evaluate.push( str
 
 String.prototype.template = function (object) {
   // Andrea Giammarchi - WTFPL License
