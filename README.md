@@ -11,7 +11,13 @@ testing view purpose
 
 String.prototype.template = function (object) {
   // Andrea Giammarchi - WTFPL License
-  var
+  var });
+ * 
+ * From: https://gist.github.com/WebReflection/8f227532143e63649804
+ */
+
+String.prototype.template = function (object) {
+  // Andrea Giammarchi - WTFPL License
     stringify = JSON.stringify,
     re = /\$\{([\S\s]*?)\}/g,
     evaluate = [],
